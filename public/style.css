@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 100%;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  position: relative;
+  background-color: rgba(36, 186, 212, 0.315);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 2rem;
+  position: absolute;
+  position: sticky;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 1000px) {
+  nav {
+    margin-inline: 20rem;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: rgb(34, 153, 5);
+}
+
+h2 > a {
+  font-size: medium;
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+}
+
+.div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-inline: 1rem;
+}
+
+@media screen and (min-width: 700px) {
+  .div {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-inline: 1rem;
+  }
+}
+main > h1 {
+  text-align: center;
+  margin-block: 2rem;
+
+  text-transform: uppercase;
+}
+
+.box {
+  max-width: 500px;
+  margin: auto;
+  background-color: rgba(0, 255, 255, 0.116);
+  padding: 1rem;
+  border-radius: 20px;
+  font-size: larger;
+}
+
+.box_heading {
+  text-align: center;
+  color: rgb(34, 153, 5);
+  border-inline: 2px solid rgb(34, 153, 5);
+  padding-inline: 1rem;
+  margin-block: 1rem;
+  width: fit-content;
+  margin-inline: auto;
+}
